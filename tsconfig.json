@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+      "incremental": false,
+      "target": "es2020",
+      "module": "esnext",
+      "lib": ["DOM"],
+      "allowJs": false,
+      "checkJs": false,
+      "jsx": "react",
+      "declaration": false,
+      "declarationMap": false,
+      "sourceMap": true,
+      "outDir": "./build/",
+      "rootDir": "./src/",
+      "composite": false,
+      "strict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "strictBindCallApply": true,
+      "strictPropertyInitialization": true,
+      "noImplicitThis": true,
+      "alwaysStrict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUncheckedIndexedAccess": true,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true
+    },
+    "include": [
+      "src"
+    ]
+  }

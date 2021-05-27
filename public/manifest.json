@@ -1,0 +1,13 @@
+{
+  "name": "faller games",
+  "short_name": "faller games",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A collection of educational material.",
+  "icons": [{
+    "src": "wtf-g.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

@@ -1,0 +1,32 @@
+.toggle {
+  width:80px;
+  height: 40px;
+
+  display: inline-block;
+
+  background: #333;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.toggle::after {
+  content: '';
+  position: relative;
+
+  border-radius: 25px;
+  background: whitesmoke;
+
+  width: 25px;
+  height: 25px;
+
+  display: block;
+  top: 8px;
+  left: 47px;
+
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.toggle.active::after {
+  transform: translateX(-39px);
+}
