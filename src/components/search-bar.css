@@ -1,0 +1,40 @@
+.search-bar {
+	display: flex;
+	align-items: center;
+
+	padding-left: 8px;
+
+	height: 42px;
+	width: 160px;
+
+	background: #333;
+	border: none;
+	border-radius: 5px;
+	color: whitesmoke;
+}
+
+.search-bar input {
+	outline: none;
+
+	font-family: 'Open Sans', sans-serif;
+
+	width: calc(160px - 24px);
+
+	margin-left: 4px;
+
+	background: transparent;
+	border: none;
+	border-radius: 5px;
+	color: whitesmoke;
+}
+
+.search-bar input::valu
+
+body.dark .search-bar svg {
+	color: white;
+}
+
+.search-bar svg {
+	height: 24px;
+	display: block;
+}

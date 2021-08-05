@@ -1,30 +1,20 @@
 import React from 'react';
+import { useStore } from '../App';
 import './toggle.css';
 
-interface ToggleState {
-  value: boolean;
-}
+export default () => {
+  const dark = useStore(state => state.dark);
 
-interface ToggleProps {
-  app: { setState({ dark }: { dark: boolean }): void; }
-}
+  const className = dark ? 'toggle active' : 'toggle';
 
-export default class Toggle extends React.Component<ToggleProps, ToggleState> {
-  public readonly state = { value: false };
-
-  public render() {
-    const { value } = this.state;
-
-    return (
-      <div
-        className={`toggle${value?' active':''}`}
-        onClick={() => {
-          const { value } = this.state;
-          this.setState({ value: !value });
-          this.props.app.setState({ dark: value });
-        }}
-      >
-      </div>
-    );
-  }
+  return (
+    <div
+      className={className}
+      onClick={() => {
+        console.log('[toggle.tsx] changed appearance:', dark ? 'dark' : 'light');
+        useStore.setState({ dark: !dark });
+      }}
+    >
+    </div>
+  );
 }

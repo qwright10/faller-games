@@ -55,6 +55,8 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 0 15px;
+
+  text-align: center;
 }
 
 header h1 {
@@ -74,6 +76,13 @@ header h1 #what-the-faller {
 
 header h1 #games {
   color: #0000e0;
+}
+
+header #subline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 340px;
 }
 
 #memoriam {
@@ -102,7 +111,7 @@ header h1 #games {
   padding-left: 15px;
 }
 
-#games-list ul li+li {
+#games-list ul li {
   margin-top: 10px;
 }
 
@@ -142,11 +151,26 @@ iframe {
 
 footer {
   grid-area: footer;
-  font-size: 10px;
+  font-size: 9px;
+  height: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-right: 14px;
   align-items: center;
+}
+
+footer img {
+  display: inline-block;
+  height: 16px;
+  filter: invert(1);
+  margin-right: 3px;
+}
+
+footer a {
+  display: inline-block;
+  margin-right: 3px;
+  height: 16px;
 }
 
 /* dark mode */
@@ -188,4 +212,8 @@ body.dark #game-bar h2 {
 
 body.dark footer {
   color: whitesmoke;
+}
+
+body.dark footer img {
+  filter: invert(0);
 }
