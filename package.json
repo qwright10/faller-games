@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build:publish": "pnpm build && ln -s /var/www/what.the.faller.fun/assets /var/www/what.the.faller.fun/build/assets && sudo chown www-data:www-data /var/www/what.the.faller.fun -R"
+    "build:publish": "pnpm build && sudo chown www-data:www-data /var/www/what.the.faller.fun -R"
   },
   "browserslist": [
     ">0.2%",
